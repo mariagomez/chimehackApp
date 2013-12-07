@@ -1,12 +1,13 @@
 
-MyApp.causes = function() {
+MyApp.share = function(params) {
 
 	var viewModel = {
         dataSource: new DevExpress.data.DataSource({
             load: function(loadOptions) {
-                return $.getJSON('http://chimeapp.herokuapp.com/causes');
+                return $.getJSON('http://chimeapp.herokuapp.com/causes/' + params.id);
             },
             map: function(item) {
+            	console.log(item);
                 return {
                     title: item.title,
                     id: item.id
@@ -14,14 +15,6 @@ MyApp.causes = function() {
             }
         })
     };
+    console.log(viewModel.dataSource.title);
     return viewModel;
-};
-
-var overlayVisible = ko.observable(false);
-var showOverlay = function () {
-    overlayVisible(true);
-};
-var hideOverlay = function () {
-    overlayVisible(false);
-};
-
+}

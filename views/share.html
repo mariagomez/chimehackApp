@@ -21,10 +21,13 @@
 
 </style>
 
-<div data-options="dxView : { name: 'share', title: 'Chime!' } " >
+<div data-options="dxView : { name: 'share', title: 'Share your Chime!' } " >
     <div data-options="dxContent : { targetPlaceholder: 'content' } " >
-		<p>Share with your friends</p>
-		<div id="buttonContainer" data-bind="dxButton: { text: 'Share!', clickAction: showOverlay }"></div>
+      <center>
+    		<p>Share with your friends because</p>
+        <input typw="text" />
+    		<div id="buttonContainer" data-bind="dxButton: { text: 'Share!', clickAction: showOverlay }"></div>
+      </center>
     </div>
 
     <div id="overlayContainer" data-bind="dxOverlay: { visible: overlayVisible }">

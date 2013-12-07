@@ -30,6 +30,7 @@
             ]
         });
 
+        MyApp.app.router.register("share/:id", { view: "share", id: undefined });
         MyApp.app.router.register(":view", { view: "home" });
 
         MyApp.app.navigate();

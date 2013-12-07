@@ -15,9 +15,9 @@ MyApp.chimers = function() {
 
 	var viewModel = {
 	    selectedItem: ko.observable(),
-	    chimer: MyApp.chimerSet;
+	    chimer: MyApp.chimerSet
  	};
- 	
+
  	return viewModel;
 
 };

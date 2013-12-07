@@ -1,4 +1,4 @@
-﻿MyApp.home = function (params) {
+﻿MyApp.login = function (params) {
 
     var viewModel = {
 //  Put the binding properties here
