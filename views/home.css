@@ -2,3 +2,59 @@
 .home-view p {
 	padding: 5px;
 }
+
+.profile_picture
+{
+	height: 80px;
+	width: 80px;
+	border-width: 2px;
+	border-radius: 10px;
+	border-style: solid;
+	border-color: white;
+	margin: 14px 0 0 5px;
+	margin: 0 auto;
+}
+
+.user_name
+{
+	font-family: futura;
+	font-size: default;
+	color: black;
+}
+
+.clout_score
+{
+	font-family: futura;
+	font-size: default;
+	color: black;
+}
+
+.user_info
+{
+	text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li p .chime_title, li p .action
+{
+	font-weight: 300;
+	font-family: futura;
+}
+
+li p .chime_description {
+	font-weight: 100;
+   font-family: futura;
+}
+ 
+li {
+  padding: 10px;
+  overflow: auto;
+}
+ 
+li:hover {
+  background: #eee;
+  cursor: pointer;
+}

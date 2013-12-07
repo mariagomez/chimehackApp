@@ -1,5 +1,39 @@
 ﻿<div data-options="dxView : { name: 'home', title: 'Home' } " >
-    <div class="home-view"  data-options="dxContent : { targetPlaceholder: 'content' } " >
-        <div id="buttonContainer" data-bind="dxButton: { text: 'Login with Twitter' }"></div>
-    </div>
+	<div class="home-view"  data-options="dxContent : { targetPlaceholder: 'content' } " >
+		<div class="user_info">
+			<img class="profile_picture" src="assets/profile_picture.png" alt="profile_picture" />
+			<p class="username">Beyonce</p>
+			<p class="clout_score">Chime Score: 10000</p>
+		</div>
+		<ul class="chimes" data-role="listview" data-inset="true" data-theme="b">
+			<li class = "chime" style="background-color: #F7A859">
+				<p class="chime_title">Women in Tech</p>
+				<p class="chime_description">I chime for women in tech because I want to build the next twitter</p>
+			</li>
+			<li class = "chime" style="background-color: #FCBB45">
+				<p class="chime_title">US Female President</p>
+				<p class="chime_description">I chime for US female president because a time for a woman to take office</p>
+			</li>
+			<li class = "action" style="background-color: #F7A859">
+				<p class="chime_title">Action!</p>
+				<p class="chime_description">I donated $3000 for Beyonce's chime for educating women in Pakistan</p>
+			</li>
+			<li class = "action" style="background-color: #EA4884">
+				<p class="chime_title">Health</p>
+				<p class="chime_description">I chime for a HIV free generations</p>
+			</li>
+			<li class = "chime" style="background-color: #F7A859">
+				<p class="chime_title">Education</p>
+				<p class="chime_description">I chime for opening schools in Pakistan</p>
+			</li>
+			<li class = "action" style="background-color: #EA4884">
+				<p class="chime_title">Action!</p>
+				<p class="chime_description">I donated $100 for Salma Hayek's chime for women's health</p>
+			</li>
+			<li class = "action" style="background-color: #EA4884">
+				<p class="chime_title">Health</p>
+				<p class="chime_description">I chime for a HIV free generations</p>
+			</li>
+		</ul>
+	</div>
 </div>
