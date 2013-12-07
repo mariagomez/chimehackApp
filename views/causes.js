@@ -9,7 +9,8 @@ MyApp.causes = function() {
             map: function(item) {
                 return {
                     title: item.title,
-                    id: item.id
+                    id: item.id,
+                    category: item.category
                 };
             }
         })
