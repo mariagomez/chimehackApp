@@ -1,3 +1,13 @@
+var calculateTheme = function(category) {
+    switch(category) {
+        case 'Education':
+            return 'orange';
+        case 'Justice':
+            return 'green';
+        default:
+            return 'blue';
+    }
+};
 
 MyApp.causes = function() {
 
