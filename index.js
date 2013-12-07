@@ -31,7 +31,9 @@
         });
 
         MyApp.app.router.register("share/:id/:cause", { view: "share", id: undefined, cause: undefined });
-        MyApp.app.router.register(":view", { view: "home" });
+        MyApp.app.router.register("chimes/:id/:cause", { view: "chimes", id: undefined, cause: undefined });
+
+        MyApp.app.router.register(":view", { view: "causes" });
 
         MyApp.app.navigate();
     });
