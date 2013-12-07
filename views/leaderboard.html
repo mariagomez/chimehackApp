@@ -1,1 +1,80 @@
-﻿
+/*Implementation of an example leaderboard with a sample dataset(NOT a fully functional model - quick write up for design/visual purposes only) */
+<html>
+	<head>
+		<title>Top Chimers</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Links-->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+		<link rel="stylesheet" href="leaderboard.css" />
+
+<!--Scripts-->
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+		<script src="../js/knockout-2.1.0.js"></script>
+		<script src="../js/jquery.easing.1.3.js"></script>
+		<script src="../js/leaderboard.js"></script> <!--Future work-->
+	</head>
+	<body>
+		<div data-role="page">
+			<div data-role="header" data-theme="b">
+				<h1>Top Chimers</h1>
+			</div>
+			<div data-role="content" data-theme="a">	
+				<ul class="chimer-list" data-role="listview"> <!--Future Feature: data-bind="foreach: chimers"-->
+					<li class="chimer">
+						<table data-role="table"> <!--Future fix: Eliminate tables! Bad practice :( But data-inline div's is not working on mobile at 2:17 am, 12.07.2013. Experiment with ui-grids if time permits tomorrow!-->
+							<td class="chimer-info">
+								<a href="https://twitter.com/salmahayeknews">
+									<img src="http://en.vogue.fr/uploads/images/thumbs/201309/gucci_chime_for_change_frida_giannini__beyonc___knowles_carter_et_salma_hayek_pinault_739037913_north_545x.1" alt="Salma Hayek"/>
+								</a>
+								<p class="name">Salma Hayek</p>
+							</td>
+							<td>
+								<p class="chime-score">10000 chimes</p>
+							</td>
+						</table>
+					</li> <!--Get example datasets tomorrow from teammates-->
+					<li class="chimer">
+						<table data-role="table">
+							<td class="chimer-info">
+								<a href="https://twitter.com/salmahayeknews">
+									<img src="http://en.vogue.fr/uploads/images/thumbs/201309/gucci_chime_for_change_frida_giannini__beyonc___knowles_carter_et_salma_hayek_pinault_739037913_north_545x.1" alt="Salma Hayek"/>
+								</a>
+								<p class="name">Salma Hayek</p>
+							</td>
+							<td>
+								<p class="chime-score">10000 chimes</p>
+							</td>
+						</table>
+					</li> 
+					<li class="chimer">
+						<table data-role="table">
+							<td class="chimer-info">
+								<a href="https://twitter.com/salmahayeknews">
+									<img src="http://en.vogue.fr/uploads/images/thumbs/201309/gucci_chime_for_change_frida_giannini__beyonc___knowles_carter_et_salma_hayek_pinault_739037913_north_545x.1" alt="Salma Hayek"/>
+								</a>
+								<p class="name">Salma Hayek</p>
+							</td>
+							<td>
+								<p class="chime-score">10000 chimes</p>
+							</td>
+						</table>
+					</li> 
+					<li class="chimer">
+						<table data-role="table">
+							<td class="chimer-info">
+								<a href="https://twitter.com/salmahayeknews">
+									<img src="http://en.vogue.fr/uploads/images/thumbs/201309/gucci_chime_for_change_frida_giannini__beyonc___knowles_carter_et_salma_hayek_pinault_739037913_north_545x.1" alt="Salma Hayek"/>
+								</a>
+								<p class="name">Salma Hayek</p>
+							</td>
+							<td>
+								<p class="chime-score">10000 chimes</p>
+							</td>
+						</table>
+					</li> 
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
