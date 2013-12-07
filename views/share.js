@@ -2,19 +2,27 @@
 MyApp.share = function(params) {
 
 	var viewModel = {
-        dataSource: new DevExpress.data.DataSource({
-            load: function(loadOptions) {
-                return $.getJSON('http://chimeapp.herokuapp.com/causes/' + params.id);
-            },
-            map: function(item) {
-            	console.log(item);
-                return {
-                    title: item.title,
-                    id: item.id
-                };
-            }
-        })
+        id: params.id,
+        cause: params.cause,
+        reason: ko.observable(''),
+
+        tweet: "I chime for " + params.cause,
+
+        overlayImg: "views/assets/ChimeOverlay.png"
     };
-    console.log(viewModel.dataSource.title);
+
+    // $.getJSON('http://chimeapp.herokuapp.com/causes/' + params.id).done(function(data) {
+    //     viewModel.cause(data.ProductName);
+    // });
+
     return viewModel;
 }
+
+var overlayVisible = ko.observable(false);
+var showOverlay = function () {
+    overlayVisible(true);
+};
+var hideOverlay = function () {
+    overlayVisible(false);
+};
+

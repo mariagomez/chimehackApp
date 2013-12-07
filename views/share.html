@@ -19,21 +19,62 @@
   background-color:#333333;
 }
 
+.paypal-button {
+  padding: 4px 19px;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-radius: 13px;
+  font-family: "Arial", bold, italic;
+  font-weight: bold;
+  font-style: italic;
+  border: 1px solid #ffa823;
+  color: #0E3168;
+  background: #ffa823;
+  position: relative;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  cursor: pointer;
+  z-index: 0;
+}
+
+.twitter-share-button {
+  background: transparent url(https://abs.twimg.com/a/1386278595/t1/img/bird-topbar-blue.png) no-repeat 10px;
+}
+
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:none;}
+a:active {text-decoration:none;}
+
+.facebook {
+    background-image: url('views/assets/Facebook.png');
+    background-repeat: no-repeat;
+    background-size: 23px 23px;
+}
 </style>
+
+
 
 <div data-options="dxView : { name: 'share', title: 'Share your Chime!' } " >
     <div data-options="dxContent : { targetPlaceholder: 'content' } " >
-      <center>
-    		<p>Share with your friends because</p>
-        <input typw="text" />
-    		<div id="buttonContainer" data-bind="dxButton: { text: 'Share!', clickAction: showOverlay }"></div>
-      </center>
-    </div>
+      <div class="reason">
+        <p>I chime for <span data-bind="text: cause"/> because</p>
+        <input type="text" data-bind="value: reason" />
+        <div id="buttonContainer" data-bind="dxButton: { text: 'Share!', clickAction: showOverlay, iconSrc: 'views/assets/Comment-1@2x.png' }"></div>
+      </div>
+      <br/>
+      <div class="share">
+        <!-- <a href="https://www.paypal.com"><button type="submit" class="paypal-button large" >Donate</button></a> -->
+        <a data-bind="attr: {href:'https://twitter.com/intent/tweet?hashtags=IChimeFor&original_referer=https%3A%2F%2Fchimeforchange.org%2Fresources%2Fbuttons&text=' + tweet + '&tw_p=tweetbutton&url=http%3A%2F%2Fchimeforchange.org'}"class="twitter-share-button" data-count="none" sy>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+        <a data-bind="attr: {href:'http://www.facebook.com'}" class="facebook">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+      </div>
 
     <div id="overlayContainer" data-bind="dxOverlay: { visible: overlayVisible }">
 	  <div class="overlayContents">
 	      <p>The overlay window text.</p>
 	      <div class="button" data-bind="dxButton: { text: 'Hide overlay', clickAction: hideOverlay }"></div>
+        <img data-bind="attr {src: overlayImg}" />
 	  </div>
 	</div>
 </div>
