@@ -1,11 +1,11 @@
 var calculateTheme = function(category) {
     switch(category) {
         case 'Education':
-            return 'orange';
+            return '#F7A859';
         case 'Justice':
-            return 'green';
+            return '#FCBB45';
         default:
-            return 'blue';
+            return '#EA4884';
     }
 };
 

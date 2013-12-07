@@ -8,13 +8,24 @@ MyApp.causeChimes = [
 	{id:3, reason:"Follow my dreams", userId:789, widthRatio:2}
 ];
 
-MyApp.chimes = function() {
+MyApp.chimes = function(params) {
 
 	var viewModel = {
-		title: ko.observable('My new title'),
-		cause: MyApp.cause,
-		chimes: MyApp.causeChimes
-	};
+        dataSource: new DevExpress.data.DataSource({
+            load: function(loadOptions) {
+                return $.getJSON('http://chimeapp.herokuapp.com/causes/' + params.id + '/chimes');
+            },
+            map: function(item) {
+                return {
+                    userImg:  item.user.image_url,
+                    reason: item.reason.replace("because", ""),
+                    user: item.user.name,
+                    chime_score: item.user.clout
+                };
+            }
+        }),
+        title: ko.observable(params.cause)
 
+    };
     return viewModel;
 };

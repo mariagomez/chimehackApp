@@ -3,7 +3,7 @@
 .home-view {
 	padding: 5px;
 
-    background: url(assets/bg.png) no-repeat center center fixed; 
+    background: url(assets/bg.png) no-repeat center center fixed;
   	background-size: cover;
   	overflow: scroll;
 }
@@ -60,12 +60,12 @@ li p .chime_description {
 	font-weight: 100;
    font-family: futura;
 }
- 
+
 li {
   padding: 10px;
   overflow: auto;
 }
- 
+
 li:hover {
   background: #eee;
   cursor: pointer;
