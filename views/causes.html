@@ -1,5 +1,11 @@
 <div data-options="dxView : { name: 'causes', title: 'Daily Chime' } " >
     <div data-options="dxContent : { targetPlaceholder: 'content' } " >
-        <p>Browse Today's causes</p>
+        <div data-bind="dxGallery: { dataSource: todayCauses }">
+        	<div data-options="dxTemplate: { name: 'item' }">
+			    <p>I chime for <span data-bind="text: title"> </span></p>
+		        <p data-bind="text: chime_reason"> </p>
+		        <input type="text" name="personal_reason" />
+			</div>
+		</div>
     </div>
 </div>

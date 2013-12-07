@@ -1,0 +1,6 @@
+.tile {
+  border-radius: .5em;
+  text-align: center;
+  color: white;
+  background: gray;
+}

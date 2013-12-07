@@ -21,6 +21,11 @@
                 title: "Daily Chime",
                 action: "#causes",
                 icon: "info"
+              },
+              {
+                title: "Chimes",
+                action: "#chimes",
+                icon: "info"
               }
             ]
         });

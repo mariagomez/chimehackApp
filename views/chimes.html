@@ -1,0 +1,15 @@
+<div data-options="dxView : { name: 'chimes'} " >
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " >
+        <div class="tileView" data-bind="dxTileView: {
+		  dataSource: chimes,
+		  itemMargin: 20,
+		  baseItemHeight: 130,
+		  baseItemWidth: 180
+		}">
+		    <div class="tile" data-options="dxTemplate:{name:'item'}">
+		        <p style="font-size:larger;"><b data-bind="text: reason"></b></p>
+		    	<p>By: <i data-bind="text: userId"></i></p>
+		    </div>
+		</div>
+    </div>
+</div>
