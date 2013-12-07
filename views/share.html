@@ -1,6 +1,36 @@
+<style type="text/css">
+.overlayContents{
+  padding: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 15px;
+  height: 150px;
+}
+.dx-theme-ios .overlayContents{
+  border-color:#43628D;
+  background-color:#F7F7F7;
+}
+.dx-theme-android .overlayContents{
+  border-color:#FFFFFF;
+  background-color:#5F5F5F;
+}
+.dx-theme-win8 .overlayContents{
+  border-color: #E4E4E4;
+  background-color:#333333;
+}
+
+</style>
+
 <div data-options="dxView : { name: 'share', title: 'Chime!' } " >
     <div data-options="dxContent : { targetPlaceholder: 'content' } " >
 		<p>Share with your friends</p>
-		<div id="buttonContainer" data-bind="dxButton: { text: 'Share!', clickAction: '#chimes' }"></div>
+		<div id="buttonContainer" data-bind="dxButton: { text: 'Share!', clickAction: showOverlay }"></div>
     </div>
+
+    <div id="overlayContainer" data-bind="dxOverlay: { visible: overlayVisible }">
+	  <div class="overlayContents">
+	      <p>The overlay window text.</p>
+	      <div class="button" data-bind="dxButton: { text: 'Hide overlay', clickAction: hideOverlay }"></div>
+	  </div>
+	</div>
 </div>

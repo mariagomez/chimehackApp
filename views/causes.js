@@ -16,3 +16,11 @@ MyApp.causes = function() {
     return viewModel;
 };
 
+var overlayVisible = ko.observable(false);
+var showOverlay = function () {
+    overlayVisible(true);
+};
+var hideOverlay = function () {
+    overlayVisible(false);
+};
+
