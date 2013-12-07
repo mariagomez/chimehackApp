@@ -13,17 +13,17 @@
             navigationType: "navbar",
             navigation: [
               {
-                title: "Home",
+                title: "My Profile",
                 action: "#home",
                 icon: "home"
               },
               {
-                title: "Daily Chime",
+                title: "Causes",
                 action: "#causes",
                 icon: "info"
               },
               {
-                title: "Chimes",
+                title: "All Chimers",
                 action: "#chimes",
                 icon: "info"
               }
@@ -31,6 +31,7 @@
         });
 
         MyApp.app.router.register(":view", { view: "home" });
+
         MyApp.app.navigate();
     });
 

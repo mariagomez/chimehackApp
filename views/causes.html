@@ -1,14 +1,11 @@
-<style type="text/css">
-.gallery {
-	border: 1px;
-}
-</style>
 <div data-options="dxView : { name: 'causes', title: 'Daily Chime' } " >
     <div data-options="dxContent : { targetPlaceholder: 'content' } " >
 		<div class="gallery" data-bind="dxGallery: { dataSource: dataSource }">
-        	<div data-options="dxTemplate: { name: 'item' }">
-			    <p>I chime for <span data-bind="text: title"> </span></p><br/>
-		        <div id="buttonContainer" data-bind="dxButton: { text: 'Chime!' }"></div>
+        	<div class="tile" data-options="dxTemplate: { name: 'item' }" >
+        		<div class='item-container'>
+				    <p>I chime for <span data-bind="text: title"> </span></p><br/>
+			        <div id="buttonContainer" data-bind="dxButton: { text: 'Chime!', clickAction: '#share' }"></div>
+		    	</div>
 			</div>
 		</div>
     </div>
