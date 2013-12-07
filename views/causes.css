@@ -1,7 +1,8 @@
 .dx-gallery-item {
   text-align: center;
   color: white;
-  background: gray;
+  background: url(assets/bg.png) no-repeat center center fixed; 
+  background-size: cover;
 }
 .item-container {
 	padding-top: 10%;

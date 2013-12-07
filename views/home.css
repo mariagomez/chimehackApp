@@ -1,4 +1,13 @@
 ﻿/* Put css styles for home view here */
+
+.home-view {
+	padding: 5px;
+
+    background: url(assets/bg.png) no-repeat center center fixed; 
+  	background-size: cover;
+  	overflow: scroll;
+}
+
 .home-view p {
 	padding: 5px;
 }
@@ -36,11 +45,14 @@
 
 ul {
   list-style-type: none;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
-li p .chime_title, li p .action
+.chime_title
 {
 	font-weight: 300;
+	font-style: italic;
 	font-family: futura;
 }
 

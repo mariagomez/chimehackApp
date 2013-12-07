@@ -1,12 +1,14 @@
 <div data-options="dxView : { name: 'chimers', title: 'Chimers' } " >
-      <div data-options="dxContent : { targetPlaceholder: 'content' } " >
+      <div class="leaderboard" data-options="dxContent : { targetPlaceholder: 'content' } " >
             <div class="dx-fieldset" data-bind="dxList: {dataSource: chimer}">
                   <div class="dx-field" data-options="dxTemplate: { name: 'item' }">
                         <div class="dx-field-label">
                               <img data-bind="attr: { src: img }" />
                               <p data-bind="text: name"></p>
                         </div>
-                        <div class="dx-field-value" data-bind="text: chime_score"></div>
+                        <div class="dx-field-value">
+                        <p data-bind="text: chime_score"></p>
+                        </div>
                   </div>
             </div>
       </div>

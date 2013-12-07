@@ -1,7 +1,7 @@
 ﻿MyApp.chimerSet = [
-	{id:1, img:"assets/salma_hayek.jpeg", name:"Salma Hayek", chime_score:30000},
-	{id:2, img:"assets/salma_hayek.jpeg", name:"Salma Hayek", chime_score:20000},
-	{id:3, img:"assets/salma_hayek.jpeg", name:"Salma Hayek", chime_score:10000},
+	{id:1, img:"views/assets/Mosaic_Alaina.jpeg", name:"Alaina", chime_score:30000},
+	{id:2, img:"views/assets/Mosaic_Beyonce.png", name:"Beyonce", chime_score:20000},
+	{id:3, img:"views/assets/MosaicKamilla.jpg", name:"Kamilla", chime_score:10000},
 ];
 
 function chimer(id, imgUrl, name, chime_score) {

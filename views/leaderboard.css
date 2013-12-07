@@ -3,10 +3,17 @@
 .dx-fieldset {
 	min-height: 90px;
 	padding-left: 95px;
+	overflow: scroll;
+}
+
+.dx-field
+{
+  background: url(assets/bg.png) no-repeat center center fixed; 
+  background-size: cover;
 }
 
 .dx-field-label p {
-	font-size: 18px;
+	font-size: 20px;
 	color: red;
 }
 
@@ -20,18 +27,9 @@
 	margin: 14px 0 0 5px;
 }
 
-.dx-field-value {
+.dx-field-value p {
 	text-align: right;
-	font-size: 32px;
-	color: white;
-}
-
-.dx-field-label {
-	width: 90%;
-    text-align: justify;
-}
-
-.dx-field-label img {
-    display: block;
-    margin: 0 auto;
+	font-size: 30px;
+	padding-top: 20px;
+	color: black;
 }
