@@ -23,8 +23,8 @@
                 icon: "info"
               },
               {
-                title: "All Chimers",
-                action: "#chimes",
+                title: "Top Chimers",
+                action: "#chimers",
                 icon: "info"
               }
             ]
