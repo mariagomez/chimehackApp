@@ -2,3 +2,13 @@
 .home-view p {
 	padding: 5px;
 }
+
+.home-view 
+{
+	background: url(assets/bg.png) no-repeat center center fixed; 
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	overflow: none;
+}
+
