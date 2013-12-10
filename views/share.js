@@ -8,7 +8,7 @@ MyApp.share = function(params) {
 
         tweet: "I chime for " + params.cause,
 
-        overlayImg: "views/assets/ChimeOverlay.png"
+        overlayImg: "views/assets/shareChimeOverlay.png"
     };
 
     // $.getJSON('http://chimeapp.herokuapp.com/causes/' + params.id).done(function(data) {
